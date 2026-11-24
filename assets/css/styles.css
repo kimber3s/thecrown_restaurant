@@ -29,8 +29,14 @@
 
 body{
     margin: 0 auto; 
+    display: flex;
+    min-height: 100vh; /*viewport height*/
+    flex-direction: column;
 }
 
+main{
+    flex: 1 0 auto;
+}
 
 /* Home.html */
 /* header */
@@ -40,6 +46,8 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    margin: 5px;
 }
 
 h1{
@@ -59,14 +67,34 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content:space-around;
+    margin: 0;
+    padding: 0;
+
 }
 
 #navigation-elements a{
     text-decoration: none;
     color: var(--colour-primary);
+    font-family: var(--font-heading);
+    font-size:20px;
 }
 
 .active{
     color: var(--colour-hover);
     text-decoration: underline;
+}
+
+.btn-nav{
+    background-color: var(--colour-section-heading);
+    color: var(--colour-white) !important;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+/* footer */
+
+footer{
+    background-color: var(--colour-primary);
+    color: var(--colour-white);
+    text-align: center;
 }
