@@ -29,7 +29,7 @@
 
 /* global styles*/
 
-.text-centre{
+.text-center{
     text-align: center;
 }
 
@@ -149,4 +149,42 @@ footer{
     padding: 10px 15px;
     text-decoration: none;
 
+}
+
+/* recipes page */
+#recipes-container{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+}
+
+#cards{
+    width:100%;
+    flex:1;
+}
+
+#show-recipe{
+    width:100%;
+    flex:3;
+}
+
+.card-recipe{
+    width:100%;
+    text-align:center;
+    border: solid 1px var(--colour-primary);
+    margin-top:2vh;
+    background-color: var(--colour-scrollbar-hover);
+}
+
+.card-recipe-active{
+    border-color: solid 1px var(--colour-hover);
+}
+
+.display-none{
+    display: none;
+}
+ul{
+    list-style:none;
 }
