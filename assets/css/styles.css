@@ -1,0 +1,72 @@
+/* CSS Variables  */
+:root{
+
+    /* colours  */
+    --colour-primary: #1C1917;	
+    --colour-nav-bar-bg: #FAFAF9;
+    --colour-section-heading: #9F1239;
+    --colour-hover: #B45309;
+    --colour-book-bg: #E7E5E4;
+    --colour-white: #FFFFFF;
+    --colour-input-bg: #D9E6F3;
+    --colour-text-secondary: #6B7280;
+    --colour-text-dark: #374151;
+    --colour-border: #D1D5DB;
+    --colour-scrollbar: #D6D3D1;
+    --colour-scrollbar-hover: #A8A29E;
+    --colour-overlay-black:	#000000;
+    --colour-success-bg: #DCFCE7;
+    --colour-success: #16A34A;
+    --colour-overlay-white: rgba(255,255,255,0.1);
+    --colour-overlay: rgba(0,0,0,0.4);
+    --colour-hero-overlay: rgba(28,25,23,0.7);
+
+    /* Fonts  */
+    --font-heading: "Playfair Display", serif;
+    --font-body: "Plus Jakarta Sans", sans-serif;
+
+}
+
+body{
+    margin: 0 auto; 
+}
+
+
+/* Home.html */
+/* header */
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+h1{
+    margin: 0;
+    flex: 1;
+    text-align: center;
+}
+
+nav{
+    flex:2;
+    width: 100%;
+}
+
+#navigation-elements{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+#navigation-elements a{
+    text-decoration: none;
+    color: var(--colour-primary);
+}
+
+.active{
+    color: var(--colour-hover);
+    text-decoration: underline;
+}
