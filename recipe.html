@@ -36,20 +36,20 @@
         <div id="recipes-container">
             <!--list of recipes-->
             <div id="cards">
-                <div class="card-recipe">
+                <div class="card-recipe" data-target="recipe1">
                     <h3>Beef Wellington</h3>
                 </div>
-                <div class="card-recipe">
+                <div class="card-recipe" data-target="recipe2">
                     <h3>Beer-Battered Fish & Chips</h3>
                 </div>
-                <div class="card-recipe">
+                <div class="card-recipe" data-target="recipe3">
                     <h3>Sticky Toffee Pudding</h3>
                 </div>
             </div>
             <!--show a recipe-->
             <div id="show-recipe" class="text-center">
                 <!--recipe 1-->
-                <div class="recipe">
+                <div class="recipe" id="recipe1">
                     <h3>Beef Wellington</h3>
                     <h3>Ingredients</h3>
                     <ul>
@@ -60,7 +60,7 @@
                     </ul>
                 </div>
                 <!--recipe 2-->
-                <div class="recipe display-none">
+                <div class="recipe display-none" id="recipe2">
                     <h3>Fish & Chips</h3>
                     <h3>Ingredients</h3>
                     <ul>
@@ -71,7 +71,7 @@
                     </ul>
                 </div>
                 <!--recipe 3-->
-                <div class="recipe display-none">
+                <div class="recipe display-none" id="recipe3">
                     <h3>Sticky Toffee Pudding</h3>
                     <h3>Ingredients</h3>
                     <ul>
@@ -95,6 +95,10 @@
         <p>12 High Street, Countryside, UK | Tel: 01632 960123</p>
         <p>2026 The Crown & Hound. All rights reserved.</p>
     </footer>
+
+    <script src="assets/js/script.js">
+
+    </script>
     
 </body>
 </html>
